@@ -19,6 +19,10 @@ class DoubleLinkedList {
         ~DoubleLinkedList() {
             delete this;
         }
+
+        void push(T value) {
+            
+        }
 };
 
 #endif
