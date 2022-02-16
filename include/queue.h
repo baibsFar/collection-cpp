@@ -110,7 +110,7 @@ class Queue {
         }
 
         bool isEmpty() {
-            return this->head == NULL;
+            return this->size == 0;
         }
 
         T pickLast() {

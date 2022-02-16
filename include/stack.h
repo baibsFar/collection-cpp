@@ -98,7 +98,9 @@ class Stack {
         }
 
         // Verifies if the list is empty or not
-        bool isEmpty() { return this->head == NULL; }
+        bool isEmpty() { 
+            return this->size == 0; 
+        }
 
         // Returns the first created/added node of the list
         // As if this is a LIFO, then the first node is the first created node

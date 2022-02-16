@@ -1,15 +1,16 @@
 #ifndef __DOUBLE_LINK_NODE_H__
 #define __DOUBLE_LINK_NODE_H__
+#include <node.h>
 
 template <class T>
 class DoubleLinkNode {
     private:
-        Node<T>* prev;
+        DoubleLinkNode<T>* prev;
         T value;
-        Node<T>* next;
+        DoubleLinkNode<T>* next;
     
     public:
-        DoubleLinkNode(T value, Node<T>* prev, Node<T>* next) {
+        DoubleLinkNode(T value, DoubleLinkNode<T>* prev, DoubleLinkNode<T>* next) {
             this->value = value;
             this->prev = prev;
             this->next = next;
@@ -23,11 +24,11 @@ class DoubleLinkNode {
             return this->value;
         }
 
-        Node<T>* getPrev() {
+        DoubleLinkNode<T>* getPrev() {
             return this->prev;
         }
 
-        Node<T>* getNext() {
+        DoubleLinkNode<T>* getNext() {
             return this->next;
         }
 
@@ -35,11 +36,11 @@ class DoubleLinkNode {
             this->value = value;
         }
 
-        void setPrev(Node<T>* prev) {
+        void setPrev(DoubleLinkNode<T>* prev) {
             this->prev = prev;
         }
         
-        void setNext(Node<T>* next) {
+        void setNext(DoubleLinkNode<T>* next) {
             this->next = next;
         }
 };
